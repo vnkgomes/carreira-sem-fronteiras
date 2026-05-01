@@ -2,19 +2,151 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #0a152e;
+    color: #fff;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    padding: 0 clamp(16px, 5vw, 48px); 
+}
+/*
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+
+/* Header */
+
 header{
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: black;
     width: 100%;
     height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header .container{
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 clamp(16px, 5vw, 48px);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -38,11 +170,115 @@ header ul li a{
     align-items: center;
     width: 100%;
     height: 100vh;
+    margin: -80px 0 0 0;
 }
-.hero .container{
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 clamp(16px, 5vw, 48px);
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* APRESENTACAO */
+
+.apresentacao{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+/* PARA QUEM */
+
+.para-quem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+/* PROBLEMA CENTRAL */
+
+.problema-central{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.transformacao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.diferencial{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.aulas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.diferente{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.chamada{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.cta-final{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
 }
