@@ -11,11 +11,20 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    max-width: 1500px;
     width: 100%;
     height: auto;
     padding: 0 clamp(16px, 5vw, 48px); 
 }
+h2{
+  padding-top: 0;
+  margin-top: 0;
+}
+/* h3{
+  padding-top: 0;
+} */
+
+
 /*
 
 .tangerine-regular {
@@ -187,6 +196,9 @@ header ul li a{
     height: 100vh;
     margin: -80px 0 0 0;
     text-align: center;
+    background-image: url(../carreira-sem-fronteiras/images/Carreira\ Sem\ Fronteiras\ -\ ID\ \(2\).png);
+    background-size: cover;
+    background-position: center;
 }
 h1{
     font-family: "Tangerine", cursive;
@@ -211,14 +223,44 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
+.hero img{
+  width: 50%;
+  height: auto;
+}
 
 /* CARREIRA */
 
 .carreira{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #21468a;
+}
+.carreira .container{
+  padding: 49px;
+}
+.conteudo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.carreira button{
+  width: fit-content;
+  padding: 16px 32px;
+  background-color: #e7d9b6;
+  color: #0a152e;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 32px;
 }
 
 /* APRESENTACAO */
