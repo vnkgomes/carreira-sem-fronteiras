@@ -14,7 +14,7 @@ body{
     max-width: 1500px;
     width: 100%;
     height: auto;
-    padding: 0 clamp(16px, 5vw, 48px); 
+    padding: clamp(16px, 5vw, 48px); 
 }
 h2{
   padding-top: 0;
@@ -165,6 +165,8 @@ header .container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 header span{
     font-family: "Tangerine", cursive;
@@ -235,7 +237,7 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: #21468a;
+  /* background-color: #21468a; */
 }
 .carreira .container{
   padding: 49px;
@@ -261,6 +263,12 @@ h1{
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-top: 32px;
+}
+.carreira h2{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  color: #e7d9b6;
 }
 
 /* APRESENTACAO */
