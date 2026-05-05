@@ -246,8 +246,8 @@ h1{
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-  text-align: center;
+  width: 60%;
+  /* text-align: center; */
   margin: 0 auto;
 }
 .carreira button{
@@ -362,16 +362,36 @@ h1{
 }
 
 .cta-final{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.cta-final .container{
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+.cta-final h2{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #e7d9b6;
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer .container{
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
