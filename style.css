@@ -27,7 +27,10 @@ h2{
 /* h3{
   padding-top: 0;
 } */
-
+p{
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
 
 /*
 
