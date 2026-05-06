@@ -19,6 +19,10 @@ body{
 h2{
   padding-top: 0;
   margin-top: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #e7d9b6;
 }
 /* h3{
   padding-top: 0;
@@ -264,12 +268,6 @@ h1{
   letter-spacing: 0.2rem;
   margin-top: 32px;
 }
-.carreira h2{
-  font-weight: 600;
-  font-style: normal;
-  font-size: 3rem;
-  color: #e7d9b6;
-}
 
 /* APRESENTACAO */
 
@@ -287,6 +285,16 @@ h1{
     justify-content: center;
     width: 100%;
     height: auto;
+}
+.para-quem ul{
+  list-style: none;
+}
+.para-quem li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  /* font-size: 1.2rem; */
 }
 
 /* PROBLEMA CENTRAL */
@@ -353,6 +361,37 @@ h1{
     width: 100%;
     height: auto;
 }
+.cartoes{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+    margin: 48px 0;
+}
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 16px;
+    background-color: #21468a;
+    border-radius: 10px;
+    text-align: center;
+}
+.cartao img{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 16px 0;
+}
+.cartao h3{
+  margin: 0 0 10px 0;
+}
+.cartao p{
+  margin: 0;
+}
 
 .chamada{
     display: flex;
@@ -372,12 +411,6 @@ h1{
   align-items: center;
   width: 60%;
   text-align: center;
-}
-.cta-final h2{
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: #e7d9b6;
 }
 
 footer{
