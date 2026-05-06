@@ -234,7 +234,7 @@ h1{
   height: auto;
 }
 
-/* CARREIRA */
+/* Bloco 1 — Abertura */
 
 .carreira{
   display: flex;
@@ -269,22 +269,15 @@ h1{
   margin-top: 32px;
 }
 
-/* APRESENTACAO */
-
-.apresentacao{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-/* PARA QUEM */
+/* Bloco 2 — Conexão com a Dor */
 
 .para-quem{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+    background-color: white;
+    color: black;
 }
 .para-quem ul{
   list-style: none;
@@ -297,14 +290,7 @@ h1{
   /* font-size: 1.2rem; */
 }
 
-/* PROBLEMA CENTRAL */
-
-.problema-central{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
+/* Bloco 3 — A Jornada */
 
 .transformacao{
     display: flex;
@@ -313,19 +299,18 @@ h1{
     height: auto;
 }
 
+/* Bloco 4 — Entregas */
+
 .beneficios{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+    background-color: white;
+    color: black;
 }
 
-.diferencial{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
+/* Bloco 5 — Conteúdo Programático  */
 
 .aulas{
     display: flex;
@@ -334,32 +319,35 @@ h1{
     height: auto;
 }
 
-.diferente{
+/* Bloco 6 — Quem Conduz */
+
+.quem-conduz{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+}
+
+/* Bloco 7 — Método */
+
+.metodo{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
 }
 
-.sobre{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-.resultado{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
+/* Bloco 8 — Como Funciona */
 
 .informacoes{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+    background-color: white;
+    color: black;
 }
 .cartoes{
     display: flex;
@@ -380,6 +368,7 @@ h1{
     background-color: #21468a;
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 .cartao img{
     width: 50px;
@@ -393,18 +382,24 @@ h1{
   margin: 0;
 }
 
-.chamada{
+/* Bloco 9 — Chamada Emocional */
+
+.chamada-emocional{
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
 }
 
+/* Bloco 10 — Call to Action */
+
 .cta-final{
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
+  background-color: white;
+  color: black;
 }
 .cta-final .container{
   flex-direction: column;
@@ -412,6 +407,8 @@ h1{
   width: 60%;
   text-align: center;
 }
+
+/* Footer */
 
 footer{
   display: flex;
