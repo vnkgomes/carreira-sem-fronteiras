@@ -242,9 +242,10 @@ h1{
     color: #e7d9b6;
 }
 .hero h2{
+  font-size: 1.75rem;
   margin: -30px 0 0 0;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.55rem;
   color: #e7d9b6;
 }
 .hero span{
