@@ -14,15 +14,20 @@ body{
     max-width: 1500px;
     width: 100%;
     height: auto;
-    padding: clamp(16px, 5vw, 48px); 
+    padding: 100px 48px;
 }
 h2{
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 600;
   font-style: normal;
   font-size: 2.5rem;
   color: #e7d9b6;
+}
+ul{
+  margin: 0;
+  padding: 0;
 }
 /* h3{
   padding-top: 0;
@@ -30,8 +35,26 @@ h2{
 p{
   font-size: 1.25rem;
   line-height: 1.5;
+  margin: 0;
 }
-
+li{
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+button{
+  width: fit-content;
+  padding: 16px 32px;
+  background-color: #e7d9b6;
+  color: #0a152e;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 32px;
+}
 /*
 
 .tangerine-regular {
@@ -246,9 +269,6 @@ h1{
   height: auto;
   /* background-color: #21468a; */
 }
-.carreira .container{
-  padding: 49px;
-}
 .conteudo{
   display: flex;
   align-items: center;
@@ -270,6 +290,12 @@ h1{
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-top: 32px;
+}
+.carreira p{
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 /* Bloco 2 — Conexão com a Dor */
@@ -312,6 +338,20 @@ h1{
     background-color: white;
     color: black;
 }
+.beneficios .container{
+  align-items: center;
+  /* text-align: center; */
+}
+.beneficios ul{
+  list-style: none;
+}
+.beneficios li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  /* font-size: 1.2rem; */
+}
 
 /* Bloco 5 — Conteúdo Programático  */
 
@@ -320,6 +360,60 @@ h1{
     justify-content: center;
     width: 100%;
     height: auto;
+}
+.aulas .container{
+  align-items: center;
+  /* text-align: center; */
+}
+.aulas-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+}
+.aulas-lista div{
+  min-width: 40%;
+}
+.bloco1{
+  display: flex;
+  justify-content: flex-end;
+}
+.bloco2{
+  display: flex;
+}
+.aulas ul{
+  list-style: none;
+  list-style-position: outside; 
+}
+.aulas li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  /* font-size: 1.2rem; */
+}
+.aulas li img{
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+.aulas .cartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    padding: 30px 16px;
+    background-color: #21468a;
+    border-radius: 10px;
+    color: white;
+    margin: 50px 0 0 0;
+}
+.aulas .cartao > img{
+    width: 80px;
+    height: 80px;
+    margin: 0 0 40px 0;
 }
 
 /* Bloco 6 — Quem Conduz */
@@ -393,6 +487,10 @@ h1{
     width: 100%;
     height: auto;
 }
+.chamada-emocional .container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 /* Bloco 10 — Call to Action */
 
@@ -427,4 +525,8 @@ footer .container{
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+}
+footer p{
+  font-size: 1rem;
+  margin: 20px 0;
 }
