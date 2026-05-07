@@ -1,62 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #0a152e;
-    color: #fff;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    max-width: 1500px;
-    width: 100%;
-    height: auto;
-    padding: 100px clamp(16px, 5vw, 48px);
-}
-h2{
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: #e7d9b6;
-}
-ul{
-  margin: 0;
-  padding: 0;
-}
-/* h3{
-  padding-top: 0;
-} */
-p{
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin: 0;
-}
-li{
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-button{
-  width: fit-content;
-  padding: 16px 32px;
-  background-color: #e7d9b6;
-  color: #0a152e;
-  font-weight: 800;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-top: 32px;
-}
 /*
-
 .tangerine-regular {
   font-family: "Tangerine", cursive;
   font-weight: 400;
@@ -176,70 +118,123 @@ button{
   font-weight: 900;
   font-style: italic;
 }
-
 */
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0a152e;
+  color: #fff;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+  padding: 100px clamp(16px, 5vw, 48px);
+}
+h2{
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #e7d9b6;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+}
+li{
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+button{
+  width: fit-content;
+  padding: 16px 32px;
+  background-color: #e7d9b6;
+  color: #0a152e;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 32px;
+}
 
 /* Header */
 
 header{
-    display: flex;
-    justify-content: center;
-    /* background-color: black; */
-    width: 100%;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .container{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 header span{
-    font-family: "Tangerine", cursive;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.5rem;
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
 }
 header ul{
-    list-style: none;
-    display: flex;
-    gap: 16px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
 }
 header ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-family: "Tangerine", cursive;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 /* Banner */
 
 .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin: -80px 0 0 0;
-    text-align: center;
-    background-image: url(../carreira-sem-fronteiras/images/Carreira\ Sem\ Fronteiras\ -\ ID\ \(2\).png);
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: -80px 0 0 0;
+  text-align: center;
+  background-image: url(../carreira-sem-fronteiras/images/Carreira\ Sem\ Fronteiras\ -\ ID\ \(2\).png);
+  background-size: cover;
+  background-position: center;
 }
 h1{
-    font-family: "Tangerine", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(5rem, 1.429rem + 9.524vw, 10rem);
-    font-weight: 700;
-    margin: 0;
-    color: #e7d9b6;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(5rem, 1.429rem + 9.524vw, 10rem);
+  font-weight: 700;
+  margin: 0;
+  color: #e7d9b6;
 }
 .hero h2{
   font-size: clamp(0.9rem, 0.293rem + 1.619vw, 1.75rem);
@@ -278,7 +273,6 @@ h1{
   align-items: center;
   flex-direction: column;
   width: 60%;
-  /* text-align: center; */
   margin: 0 auto;
 }
 .carreira button{
@@ -305,12 +299,12 @@ h1{
 /* Bloco 2 — Conexão com a Dor */
 
 .para-quem{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 .para-quem ul{
   list-style: none;
@@ -326,25 +320,24 @@ h1{
 /* Bloco 3 — A Jornada */
 
 .transformacao{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 /* Bloco 4 — Entregas */
 
 .beneficios{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 .beneficios .container{
   align-items: center;
-  /* text-align: center; */
 }
 .beneficios ul{
   list-style: none;
@@ -354,20 +347,18 @@ h1{
   align-items: center;
   gap: 8px;
   margin-bottom: 10px;
-  /* font-size: 1.2rem; */
 }
 
 /* Bloco 5 — Conteúdo Programático  */
 
 .aulas{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 .aulas .container{
   align-items: center;
-  /* text-align: center; */
 }
 .aulas-lista{
   display: flex;
@@ -403,79 +394,79 @@ h1{
   height: 20px;
 }
 .aulas .cartao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: auto;
-    padding: 30px 16px;
-    background-color: #21468a;
-    border-radius: 10px;
-    color: white;
-    margin: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+  padding: 30px 16px;
+  background-color: #21468a;
+  border-radius: 10px;
+  color: white;
+  margin: 50px 0 0 0;
 }
 .aulas .cartao > img{
-    width: 80px;
-    height: 80px;
-    margin: 0 0 40px 0;
+  width: 80px;
+  height: 80px;
+  margin: 0 0 40px 0;
 }
 
 /* Bloco 6 — Quem Conduz */
 
 .quem-conduz{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 
 /* Bloco 7 — Método */
 
 .metodo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 /* Bloco 8 — Como Funciona */
 
 .informacoes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 .cartoes{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    width: 100%;
-    height: auto;
-    margin: 48px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+  height: auto;
+  margin: 48px 0;
 }
 .cartao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    padding: 16px;
-    background-color: #21468a;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  padding: 16px;
+  background-color: #21468a;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
 }
 .cartao img{
-    width: 50px;
-    height: 50px;
-    margin: 0 0 16px 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 16px 0;
 }
 .cartao h3{
   margin: 0 0 10px 0;
@@ -487,10 +478,10 @@ h1{
 /* Bloco 9 — Chamada Emocional */
 
 .chamada-emocional{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 .chamada-emocional .container{
   padding-top: 100px;
