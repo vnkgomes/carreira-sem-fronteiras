@@ -243,9 +243,6 @@ h1{
   letter-spacing: 0.3rem;
   color: #e7d9b6;
 }
-/* .hero .container{
-
-} */
 .caixa{
   display: flex;
   flex-direction: column;
@@ -262,7 +259,7 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 70%;
+  width: 65%;
   margin-top: 100px;
 }
 .subtitulo h3{
@@ -273,6 +270,7 @@ h1{
 }
 .subtitulo h3 span{
   font-weight: 600;
+  color: #21468a;
 }
 .subtitulo h4{
   font-family: "Tangerine", cursive;
@@ -330,6 +328,9 @@ h1{
   height: auto;
   background-color: white;
   color: black;
+}
+.para-quem p{
+  margin-bottom: 100px;
 }
 .para-quem ul{
   list-style: none;
@@ -422,9 +423,9 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: auto;
   height: auto;
-  padding: 30px 16px;
+  padding: 30px;
   background-color: #21468a;
   border-radius: 10px;
   color: white;
@@ -473,7 +474,7 @@ h1{
   gap: 32px;
   width: 100%;
   height: auto;
-  margin: 48px 0;
+  margin: 100px 0 0 0;
 }
 .cartao{
   display: flex;
@@ -526,8 +527,11 @@ h1{
 .cta-final .container{
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 50%;
   text-align: center;
+}
+.cta-final button{
+  margin-top: 50px;
 }
 
 /* Footer */
