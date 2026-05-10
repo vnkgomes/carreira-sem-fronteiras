@@ -127,7 +127,7 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #0a152e;
+  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: #fff;
 }
 .container{
@@ -228,6 +228,12 @@ header ul li a{
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 768px) {
+  .hero{
+    background-position: left;
+  }
+  
+}
 h1{
   font-family: "Tangerine", cursive;
   font-weight: 400;
@@ -248,6 +254,12 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* color: #21468a; */
+}
+@media (max-width: 768px) {
+  .hero h2{
+    margin-top: 10px;
+  }
+  
 }
 .hero .container{
   align-items: flex-start;
@@ -270,6 +282,12 @@ h1{
   align-items: flex-start;
   width: auto;
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .subtitulo{
+    margin-top: 50px;
+  }
+  
 }
 .subtitulo h3{
   font-size: clamp(1.5rem, 0.429rem + 2.381vw, 2.5rem);
@@ -318,13 +336,23 @@ h1{
   width: 100%;
   height: auto;
   /* background-color: #21468a; */
+  
+}
+.carreira .container{
+  align-items: center;
 }
 .conteudo{
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+@media (max-width: 768px) {
+  .conteudo{
+    width: 100%;
+  }
+  
 }
 .carreira button{
   width: fit-content;
@@ -448,7 +476,7 @@ h1{
   width: auto;
   height: auto;
   padding: 30px;
-  background-color: #21468a;
+  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   border-radius: 10px;
   color: white;
   margin: 50px 0 0 0;
@@ -457,6 +485,19 @@ h1{
   width: 80px;
   height: 80px;
   margin: 0 0 40px 0;
+}
+@media (max-width: 768px) {
+  .bloco1, .bloco2{
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .aulas .cartao{
+    padding: 10px;
+  }
+  .aulas-lista{
+    gap: 0px;
+  }
+  
 }
 
 /* Bloco 6 — Quem Conduz */
@@ -548,7 +589,7 @@ h1{
   width: 200px;
   height: 200px;
   padding: 16px;
-  background-color: #21468a;
+  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   border-radius: 10px;
   text-align: center;
   color: white;
@@ -593,6 +634,12 @@ h1{
   align-items: center;
   width: 50%;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .cta-final .container{
+    width: 100%;
+  }
+  
 }
 .cta-final button{
   margin-top: 50px;
