@@ -625,6 +625,7 @@ h1{
   border-radius: 10px;
   text-align: center;
   color: white;
+  position: relative;
   overflow: hidden;
 }
 .cartao img{
