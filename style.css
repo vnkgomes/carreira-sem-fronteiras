@@ -136,7 +136,7 @@ body{
   max-width: 1500px;
   width: 100%;
   height: auto;
-  padding: 100px clamp(16px, 5vw, 48px);
+  padding: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem) clamp(1.25rem, 0rem + 3.333vw, 3rem);
 }
 h2{
   padding-top: 0;
@@ -144,7 +144,7 @@ h2{
   margin-bottom: 16px;
   font-weight: 600;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem);
   color: #e7d9b6;
 }
 ul{
@@ -152,12 +152,12 @@ ul{
   padding: 0;
 }
 p{
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
   line-height: 1.5;
   margin: 0;
 }
 li{
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
   line-height: 1.5;
 }
 button{
@@ -307,12 +307,20 @@ h1{
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.286rem + 1.905vw, 3rem);
   text-align: left;
   margin: 0 0 0 20px;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.aspas{
+  width: 100px;
+  height: 100px;
+  background-image: url(images/aspas2.svg);
+  margin: 0 0 0 -20px;
+  object-fit: cover;
+  background-position: center;
 }
 
 /* Pitch Video */
@@ -381,7 +389,7 @@ h1{
   color: black;
 }
 .para-quem p{
-  margin-bottom: 100px;
+  margin-bottom: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem);
 }
 .para-quem ul{
   list-style: none;
@@ -566,7 +574,7 @@ h1{
 }
 .texto p{
   font-size: 1.75rem;
-  text-align: justify;
+  text-align: center;
 }
 .foto{
   display: flex;
