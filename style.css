@@ -616,10 +616,10 @@ h1{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: clamp(1rem, 0.286rem + 1.905vw, 2rem);
   width: 100%;
   height: auto;
-  margin: 100px 0 0 0;
+  margin: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem) 0 0 0;
 }
 .informacoes .cartao{
   display: flex;
