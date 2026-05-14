@@ -647,9 +647,12 @@ h1{
   width: 100%;
   height: auto;
 }
+.metodo .container{
+  padding-bottom: 50px;
+}
 .metodo h2{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .organizer{
   display: flex;
@@ -692,6 +695,9 @@ h1{
   height: auto;
   /* background-color: white;
   color: black; */
+}
+.informacoes .container{
+  padding-top: 50px;
 }
 .cartoes{
   display: flex;
