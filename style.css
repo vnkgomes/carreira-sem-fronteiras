@@ -408,6 +408,9 @@ h1{
   /* background-color: white;
   color: black; */
 }
+.para-quem h2{
+  text-align: center;
+}
 .para-quem p{
   margin-bottom: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem);
 }
@@ -429,6 +432,15 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
+  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  color: white;
+}
+.transformacao .container > h2{
+  /* font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem); */
+  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 /* Bloco 4 — Entregas */
@@ -444,6 +456,7 @@ h1{
 .beneficios .container{
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .beneficios ul{
   list-style: none;
@@ -469,6 +482,7 @@ h1{
 }
 .aulas .container{
   align-items: center;
+  padding-top: 50px;
 }
 .aulas-lista{
   display: flex;
@@ -633,6 +647,41 @@ h1{
   width: 100%;
   height: auto;
 }
+.metodo h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.organizer{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
+  align-items: flex-start;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  /* margin-bottom: 20px; */
+}
+.organizer img{
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+.organizer h3{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #21468a;
+}
+.organizer p{
+  text-align: center;
+}
+
 
 /* Bloco 8 — Como Funciona */
 
