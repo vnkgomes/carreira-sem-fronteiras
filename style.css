@@ -142,9 +142,10 @@ h2{
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 800;
-  font-style: normal;
-  font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem);
+  font-weight: 900;
+  font-family: "Tangerine", cursive;
+  /* font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem); */
+  font-size: 5rem;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -275,6 +276,7 @@ h1{
   font-size: clamp(0.9rem, 0.293rem + 1.619vw, 1.75rem);
   margin: -30px 0 0 0;
   font-weight: 800;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.28rem;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
@@ -354,7 +356,7 @@ h1{
 .pitch-video{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 55%;
   height: auto;
   background-color: white;
 }
@@ -376,20 +378,24 @@ h1{
 }
 .carreira .container{
   align-items: center;
+  flex-direction: row;
+  
 }
 .conteudo{
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
-  /* margin: 0 auto; */
+  width: 40%;
+  margin: 0 auto;
 }
-.conteudo > h2{
-  font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
+.carreira .conteudo > h2{
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+}
+.conteudo > h3{
+  text-align: justify;
 }
 @media (max-width: 768px) {
   .conteudo{
@@ -403,10 +409,18 @@ h1{
 .para-quem{
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   /* background-color: white;
   color: black; */
+}
+.para-quem .container{
+  justify-content: center;
+}
+.para-quem .conteudo{
+  justify-content: center;
+  margin: 0 auto;
 }
 .para-quem h2{
   text-align: center;
@@ -648,7 +662,7 @@ h1{
   height: auto;
 }
 .metodo .container{
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .metodo h2{
   text-align: center;
@@ -693,11 +707,14 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  /* background-color: white;
-  color: black; */
+  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  color: white;
 }
-.informacoes .container{
-  padding-top: 50px;
+.informacoes .container > h2{
+  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 .cartoes{
   display: flex;
@@ -716,10 +733,10 @@ h1{
   width: 200px;
   height: 200px;
   padding: 16px;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: black;
   position: relative;
   overflow: hidden;
 }
@@ -742,6 +759,13 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
+}
+.chamada-emocional .container{
+  flex-direction: row;
+}
+.chamada-emocional .conteudo{
+  align-items: center;
+  justify-content: center;
 }
 
 /* Bloco 10 — Call to Action */
