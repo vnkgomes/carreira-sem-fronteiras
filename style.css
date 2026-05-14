@@ -375,6 +375,8 @@ h1{
   /* background-color: #21468a; */
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
+  border-top: #e7d9b6 5px solid;
+  border-bottom: #e7d9b6 5px solid;;
 }
 .carreira .container{
   align-items: center;
@@ -417,16 +419,18 @@ h1{
 }
 .para-quem .container{
   justify-content: center;
+  flex-direction: row;
 }
 .para-quem .conteudo{
   justify-content: center;
+  width: 50%;
   margin: 0 auto;
 }
 .para-quem h2{
   text-align: center;
 }
 .para-quem p{
-  margin-bottom: clamp(3.125rem, 0.893rem + 5.952vw, 6.25rem);
+  margin-bottom: 50px
 }
 .para-quem ul{
   list-style: none;
@@ -438,6 +442,19 @@ h1{
   margin-bottom: 10px;
   /* font-size: 1.2rem; */
 }
+.foto-andrea{
+  display: flex;
+  width: 40%;
+  height: auto;
+}
+.foto-andrea img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.material-symbols-outlined{
+  color: green;
+}
 
 /* Bloco 3 — A Jornada */
 
@@ -448,6 +465,8 @@ h1{
   height: auto;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
+  border-top: #e7d9b6 5px solid;
+  border-bottom: #e7d9b6 5px solid;;
 }
 .transformacao .container > h2{
   /* font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem); */
@@ -456,6 +475,13 @@ h1{
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
+.transformacao .container > p{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
 
 /* Bloco 4 — Entregas */
 
@@ -495,7 +521,9 @@ h1{
   height: auto;
 }
 .aulas .container{
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding-top: 50px;
 }
 .aulas-lista{
@@ -503,7 +531,7 @@ h1{
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-  width: 100%;
+  width: auto;
 }
 .aulas-lista div{
   min-width: 40%;
@@ -536,13 +564,13 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 80%;
   height: auto;
   padding: 30px;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   border-radius: 10px;
   color: white;
-  margin: 50px 0 0 0;
+  /* margin: 50px 0 0 0; */
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
@@ -552,6 +580,18 @@ h1{
   height: 80px;
   margin: 0 0 40px 0;
 }
+.tile{
+  margin-bottom: 40px;
+  width: 70%;
+}
+.tile > h2{
+  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 768px) {
   .aulas .cartao > img{
     margin: 10px 0;
@@ -606,6 +646,8 @@ h1{
   height: 100vh;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
+  border-top: #e7d9b6 5px solid;
+  border-bottom: #e7d9b6 5px solid;;
 }
 @media (max-width: 768px) {
   .quem-conduz{
@@ -653,6 +695,7 @@ h1{
   height: 100%;
   object-fit: cover;
 }
+
 /* Bloco 7 — Método */
 
 .metodo{
@@ -686,7 +729,7 @@ h1{
   /* margin-bottom: 20px; */
 }
 .organizer img{
-  width: 100px;
+  width: 80px;
   height: auto;
   margin: 0 auto;
 }
@@ -709,12 +752,20 @@ h1{
   height: auto;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
+  border-top: #e7d9b6 5px solid;
+  border-bottom: #e7d9b6 5px solid;;
 }
 .informacoes .container > h2{
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+}
+.informacoes .container > p{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
 }
 .cartoes{
   display: flex;
@@ -736,7 +787,7 @@ h1{
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   border-radius: 10px;
   text-align: center;
-  color: black;
+  color: #21468a;
   position: relative;
   overflow: hidden;
 }
@@ -751,6 +802,7 @@ h1{
 .cartao p{
   margin: 0;
 }
+
 
 /* Bloco 9 — Chamada Emocional */
 
@@ -777,19 +829,27 @@ h1{
   height: auto;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
+  border-top: #e7d9b6 5px solid;
 }
 .cta-final h2{
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
+  margin-bottom: 50px;
 }
 .cta-final .container{
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 100%;
   /* text-align: center; */
+}
+.cta-final p{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
 }
 @media (max-width: 768px) {
   .cta-final .container{
@@ -798,7 +858,7 @@ h1{
   
 }
 .cta-final button{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 /* Footer */
