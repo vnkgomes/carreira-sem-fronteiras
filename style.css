@@ -195,7 +195,6 @@ header{
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.07);
 }
 header .container{
   flex-direction: row;
@@ -205,11 +204,14 @@ header .container{
   padding-bottom: 0;
   color: #e4e1d5;
 }
-header span{
-  font-family: "Tangerine", cursive;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2.5rem;
+.home-button{
+  display: flex;
+  height: 80px;
+  width: 80px;
+  background-image: url(images/logo-carreira-sem-fronteiras.svg);
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+  background-position: center;
 }
 header ul{
   list-style: none;
@@ -218,10 +220,11 @@ header ul{
 }
 header ul li a{
   text-decoration: none;
-  color: #e4e1d5;
-  font-weight: 400;
+  color: white;
+  font-weight: 600;
   font-style: normal;
   position: relative;
+  letter-spacing: .15rem;
   /* font-size: 2rem; */
 }
 a::after {
