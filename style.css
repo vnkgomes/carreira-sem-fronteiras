@@ -830,6 +830,13 @@ h1{
   align-items: center;
   justify-content: center;
 }
+.chamada-emocional p{
+  font-size: 1.5rem;
+}
+.chamada-emocional span{
+  font-weight: 800;
+  color: #21468a;
+}
 
 /* Bloco 10 — Call to Action */
 
