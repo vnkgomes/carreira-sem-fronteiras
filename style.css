@@ -450,17 +450,6 @@ h1{
 .material-symbols-outlined{
   color: green;
 }
-.flow{
-  display: flow-root;
-  padding-left: 300px;
-}
-.foto-andrea{
-  width: auto;
-  height: 100vh;
-  float: right;
-  shape-margin: .5em;
-  shape-outside: polygon(10px 10px, 20px 20px, 30px 30px);
-}
 
 /* Bloco 3 — A Jornada */
 
@@ -475,14 +464,25 @@ h1{
   border-bottom: #e7d9b6 5px solid;
   /* background-image: url(images/logo-carreira-sem-fronteiras.svg); */
 }
-.transformacao .container > h2{
+.transformacao .container{
+  max-width: none;
+  background-image: url(images/logo-carreira-sem-fronteiras.svg);
+  background-repeat: no-repeat;
+  background-size: 1500px auto;
+  background-position: -190% 50%;
+  
+}
+.transformacao .conteudo{
+  width: 80%;
+}
+.transformacao .container .conteudo > h2{
   /* font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem); */
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
-.transformacao .container > p{
+.transformacao .container .conteudo > p{
   display: flex;
   width: 80%;
   margin: 0 auto;
