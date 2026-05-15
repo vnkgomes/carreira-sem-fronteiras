@@ -669,7 +669,7 @@ h1{
   width: 40%;
   padding: 0 clamp(1rem, -7.214rem + 21.905vw, 10.5rem);
 }
-.texto span{
+.texto .lines{
   display: inline-block;
   background-color: white;
   height: 2px;
@@ -685,6 +685,10 @@ h1{
 .texto p{
   font-size: clamp(1.25rem, 0.893rem + 0.952vw, 1.75rem);
   /* text-align: center; */
+}
+.texto span{
+  font-weight: 800;
+  letter-spacing: 0.1rem;
 }
 .foto{
   display: flex;
