@@ -363,7 +363,7 @@ h1{
   height: auto;
   background-color: white;
 }
-.pitch-video video{
+.pitch-video iframe{
   width: 100%;
   aspect-ratio: 16 / 9;
 }
