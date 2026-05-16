@@ -1,125 +1,6 @@
-/*
-.tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
+html{
+  scroll-behavior: smooth;
 }
-
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-*/
-
 body{
   margin: 0;
   padding: 0;
@@ -144,7 +25,6 @@ h2{
   margin-bottom: 16px;
   font-weight: 900;
   font-family: "Tangerine", cursive;
-  /* font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem); */
   font-size: 5rem;
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   -webkit-background-clip: text;
@@ -177,12 +57,12 @@ button{
   letter-spacing: 0.2rem;
   margin-top: 32px;
   box-shadow: 0 0 8px rgb(66, 65, 65);
-  transition: all 0.3s ease; /* Add smooth transition */
+  transition: all 0.3s ease;
 }
 button:hover {
-  transform: scale(1.05); /* Grows by 5% */
-  background-color: #d4c698; /* Slightly darker shade */
-  box-shadow: 0 4px 12px rgb(66, 65, 65); /* Optionally enhance shadow on hover */
+  transform: scale(1.05);
+  background-color: #d4c698;
+  box-shadow: 0 4px 12px rgb(66, 65, 65);
 }
 
 /* Header */
@@ -225,7 +105,6 @@ header ul li a{
   font-style: normal;
   position: relative;
   letter-spacing: .15rem;
-  /* font-size: 2rem; */
 }
 a::after {
   content: '';
@@ -263,7 +142,6 @@ a:hover::after {
   .hero{
     background-position: left;
   }
-  
 }
 h1{
   font-family: "Tangerine", cursive;
@@ -306,7 +184,6 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
 }
 .subtitulo{
   display: flex;
@@ -382,7 +259,6 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  /* background-color: #21468a; */
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   color: white;
   border-top: #e7d9b6 5px solid;
@@ -428,11 +304,8 @@ h1{
   background-image: url(images/andrea2.png);
   background-size: 700px auto;
   background-repeat: no-repeat;
-  /* background-position: 50% 50%; */
   background-position-x: 90%;
   background-position-y: 55%;
-  /* background-color: white;
-  color: black; */
 }
 .para-quem .container{
   justify-content: center;
@@ -456,7 +329,6 @@ h1{
   align-items: center;
   gap: 8px;
   margin-bottom: 10px;
-  /* font-size: 1.2rem; */
 }
 .material-symbols-outlined{
   color: green;
@@ -464,13 +336,10 @@ h1{
 @media (max-width: 768px) {
   .para-quem .conteudo{
   width: 100%;
-}
+  }
 .para-quem{
   background-image: none;
-  background-position-x: 90%;
-  background-position-y: 55%;
-
-}
+  }
 }
 
 /* Bloco 3 — A Jornada */
@@ -484,7 +353,6 @@ h1{
   color: white;
   border-top: #e7d9b6 5px solid;
   border-bottom: #e7d9b6 5px solid;
-  /* background-image: url(images/logo-carreira-sem-fronteiras.svg); */
 }
 .transformacao .container{
   max-width: none;
@@ -492,13 +360,11 @@ h1{
   background-repeat: no-repeat;
   background-size: 1500px auto;
   background-position: -190% 50%;
-  
 }
 .transformacao .conteudo{
   width: 80%;
 }
 .transformacao .container .conteudo > h2{
-  /* font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem); */
   background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -518,7 +384,6 @@ h1{
 .transformacao .container .conteudo > p{
   width: 100%;
   margin: 0;
-  
 }
 }
 
@@ -530,8 +395,6 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  /* background-color: white;
-  color: black; */
 }
 .beneficios .container{
   align-items: center;
@@ -601,7 +464,6 @@ h1{
   align-items: center;
   gap: 8px;
   margin-bottom: 10px;
-  /* font-size: 1.2rem; */
 }
 .aulas li img{
   margin: 0;
@@ -619,7 +481,6 @@ h1{
   background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
   border-radius: 10px;
   color: white;
-  /* margin: 50px 0 0 0; */
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
@@ -687,7 +548,6 @@ h1{
   }
 }
 
-
 /* Bloco 6 — Quem Conduz */
 
 .quem-conduz{
@@ -728,7 +588,6 @@ h1{
 }
 .texto p{
   font-size: clamp(1.25rem, 0.893rem + 0.952vw, 1.75rem);
-  /* text-align: center; */
 }
 .texto span{
   font-weight: 800;
@@ -759,9 +618,6 @@ h1{
   width: 100%;
   height: auto;
 }
-.metodo .container{
-  /* padding-bottom: 50px; */
-}
 .metodo h2{
   text-align: center;
   margin-bottom: 100px;
@@ -774,15 +630,12 @@ h1{
   gap: 40px;
   align-items: flex-start;
   flex-wrap: wrap;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 .textos{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
-  /* margin-bottom: 20px; */
 }
 .organizer img{
   width: 80px;
@@ -873,7 +726,6 @@ h1{
 }
 }
 
-
 /* Bloco 9 — Chamada Emocional */
 
 .chamada-emocional{
@@ -903,6 +755,7 @@ h1{
     margin-bottom: 0;
   }
 }
+
 /* Bloco 10 — Call to Action */
 
 .cta-final{
@@ -926,7 +779,6 @@ h1{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* text-align: center; */
 }
 .cta-final p{
   display: flex;
@@ -947,8 +799,7 @@ h1{
   }
   .cta-final button{
   margin-top: 50px;
-  }
-  
+  } 
 }
 
 /* Footer */
