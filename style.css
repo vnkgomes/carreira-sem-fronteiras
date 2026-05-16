@@ -624,6 +624,7 @@ h1{
 }
 .organizer{
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   flex-direction: row;
   width: 100%;
