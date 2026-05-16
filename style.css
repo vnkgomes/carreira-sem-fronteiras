@@ -367,6 +367,13 @@ h1{
   width: 100%;
   aspect-ratio: 16 / 9;
 }
+@media (max-width: 768px) {
+  .pitch-video{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+}
 
 /* Bloco 1 — Abertura */
 
@@ -384,6 +391,7 @@ h1{
 .carreira .container{
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   
 }
 .conteudo{
@@ -453,6 +461,17 @@ h1{
 .material-symbols-outlined{
   color: green;
 }
+@media (max-width: 768px) {
+  .para-quem .conteudo{
+  width: 100%;
+}
+.para-quem{
+  background-image: none;
+  background-position-x: 90%;
+  background-position-y: 55%;
+
+}
+}
 
 /* Bloco 3 — A Jornada */
 
@@ -491,6 +510,17 @@ h1{
   margin: 0 auto;
   text-align: justify;
 }
+@media (max-width: 768px) {
+ .transformacao .conteudo{
+  width: 100%;
+  margin: 0;
+}
+.transformacao .container .conteudo > p{
+  width: 100%;
+  margin: 0;
+  
+}
+}
 
 
 /* Bloco 4 — Entregas */
@@ -513,6 +543,7 @@ h1{
 }
 .beneficios li{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   margin-bottom: 20px;
@@ -520,6 +551,14 @@ h1{
 .foco{
   font-weight: 800;
   color: #21468a;
+}
+@media (max-width: 768px) {
+  .beneficios li{
+    gap: 10px;
+  }
+  .beneficios .container{
+    padding-bottom: 0;
+  }
 }
 
 /* Bloco 5 — Conteúdo Programático  */
@@ -641,11 +680,13 @@ h1{
   }
   .aulas .cartao{
     padding: 10px;
+    width: 100%;
   }
   .aulas-lista{
     gap: 0px;
   }
 }
+
 
 /* Bloco 6 — Quem Conduz */
 
@@ -732,6 +773,7 @@ h1{
   width: 100%;
   gap: 40px;
   align-items: flex-start;
+  flex-wrap: wrap;
   /* align-items: center; */
   /* justify-content: center; */
 }
@@ -739,7 +781,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 30%;
   /* margin-bottom: 20px; */
 }
 .organizer img{
@@ -755,7 +797,15 @@ h1{
 .organizer p{
   text-align: center;
 }
-
+@media (max-width: 768px) {
+  .textos{
+  width: 100%;
+  
+}
+.metodo h2{
+  margin-bottom: 50px;
+}
+}
 
 /* Bloco 8 — Como Funciona */
 
@@ -816,6 +866,12 @@ h1{
 .cartao p{
   margin: 0;
 }
+@media (max-width: 768px) {
+  .informacoes .container > p{
+  width: 100%;
+  margin: 0;
+}
+}
 
 
 /* Bloco 9 — Chamada Emocional */
@@ -828,6 +884,7 @@ h1{
 }
 .chamada-emocional .container{
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .chamada-emocional .conteudo{
   align-items: center;
@@ -840,7 +897,12 @@ h1{
   font-weight: 800;
   color: #21468a;
 }
-
+@media (max-width: 768px) {
+  .chamada-emocional .pitch-video{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
 /* Bloco 10 — Call to Action */
 
 .cta-final{
@@ -872,14 +934,21 @@ h1{
   margin: 0 auto;
   text-align: justify;
 }
+.cta-final button{
+  margin-top: 100px;
+}
 @media (max-width: 768px) {
   .cta-final .container{
     width: 100%;
   }
+  .cta-final p{
+  width: 100%;
+  margin: 0;
+  }
+  .cta-final button{
+  margin-top: 50px;
+  }
   
-}
-.cta-final button{
-  margin-top: 100px;
 }
 
 /* Footer */
