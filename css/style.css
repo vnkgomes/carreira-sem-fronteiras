@@ -1,6 +1,17 @@
 html{
   scroll-behavior: smooth;
 }
+:root{
+  --color-primary-start: rgba(16, 36, 81, 1);
+  --color-primary-end: rgba(33, 70, 138, 1);
+  --color-secondary-start: rgba(228, 225, 213, 1);
+  --color-secondary-end: rgba(231, 217, 182, 1);
+  --gradient-primary: linear-gradient(90deg, var(--color-primary-start) 20%, var(--color-primary-end) 80%);
+  --gradient-secondary: linear-gradient(90deg, var(--color-secondary-start) 20%, var(--color-secondary-end) 80%);
+  --shadow-soft: 0 0 8px rgba(66, 65, 65, 1);
+  --shadow-medium: 0 4px 12px rgba(66, 65, 65, 1);
+  --shadow-strong: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
 body{
   margin: 0;
   padding: 0;
@@ -26,7 +37,14 @@ h2{
   font-weight: 900;
   font-family: "Tangerine", cursive;
   font-size: 5rem;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+}
+.gradient-text{
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-secondary{
+  background: var(--gradient-secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,13 +74,13 @@ button{
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-top: 32px;
-  box-shadow: 0 0 8px rgb(66, 65, 65);
+  box-shadow: var(--shadow-soft);
   transition: all 0.3s ease;
 }
 button:hover {
   transform: scale(1.05);
   background-color: #d4c698;
-  box-shadow: 0 4px 12px rgb(66, 65, 65);
+  box-shadow: var(--shadow-medium);
 }
 
 /* Header */
@@ -80,8 +98,8 @@ header{
 }
 header.scrolled,
 header.menu-open{
-  background: linear-gradient(90deg, rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-strong);
 }
 header .container{
   flex-direction: row;
@@ -169,7 +187,7 @@ header ul li a{
     top: 80px;
     left: 0;
     right: 0;
-    background: linear-gradient(90deg, rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+    background: var(--gradient-primary);
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
@@ -251,7 +269,7 @@ h1{
   font-weight: 700;
   margin: 0;
   color: #e4e1d5;
-  text-shadow: 0 0 8px rgb(66, 65, 65);
+  text-shadow: var(--shadow-soft);
 }
 .hero h2{
   font-size: clamp(0.9rem, 0.293rem + 1.619vw, 1.75rem);
@@ -260,7 +278,7 @@ h1{
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.28rem;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* color: #21468a; */
@@ -303,9 +321,6 @@ h1{
   font-weight: 300;
   text-align: left;
   margin: 0;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .subtitulo h3 span{
   font-weight: 600;
@@ -318,9 +333,6 @@ h1{
   font-size: clamp(2rem, 1.286rem + 1.905vw, 3rem);
   text-align: left;
   margin: 0 0 0 20px;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .aspas{
   width: 100px;
@@ -359,7 +371,7 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   color: white;
   border-top: #e7d9b6 5px solid;
   border-bottom: #e7d9b6 5px solid;;
@@ -378,9 +390,6 @@ h1{
   margin: 0 auto;
 }
 .carreira .conteudo > h2{
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 .conteudo > h3{
@@ -449,7 +458,7 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   color: white;
   border-top: #e7d9b6 5px solid;
   border-bottom: #e7d9b6 5px solid;
@@ -465,9 +474,6 @@ h1{
   width: 80%;
 }
 .transformacao .container .conteudo > h2{
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 .transformacao .container .conteudo > p{
@@ -578,7 +584,7 @@ h1{
   width: 80%;
   height: auto;
   padding: 30px;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   border-radius: 10px;
   color: white;
   position: relative;
@@ -595,9 +601,6 @@ h1{
   width: 70%;
 }
 .tile > h2{
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -655,7 +658,7 @@ h1{
   justify-content: flex-start;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   color: white;
   border-top: #e7d9b6 5px solid;
   border-bottom: #e7d9b6 5px solid;;
@@ -768,15 +771,12 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   color: white;
   border-top: #e7d9b6 5px solid;
   border-bottom: #e7d9b6 5px solid;;
 }
 .informacoes .container > h2{
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 .informacoes .container > p{
@@ -802,7 +802,7 @@ h1{
   width: 200px;
   height: 200px;
   padding: 16px;
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
+  background: var(--gradient-secondary);
   border-radius: 10px;
   text-align: center;
   color: #21468a;
@@ -864,14 +864,11 @@ h1{
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   color: white;
   border-top: #e7d9b6 5px solid;
 }
 .cta-final h2{
-  background: linear-gradient(90deg,rgba(228, 225, 213, 1) 20%,rgba(231, 217, 182, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 5rem;
   margin-bottom: 50px;
@@ -908,7 +905,7 @@ h1{
 footer{
   display: flex;
   justify-content: center;
-  background: linear-gradient(90deg,rgba(16, 36, 81, 1) 20%, rgba(33, 70, 138, 1) 80%);
+  background: var(--gradient-primary);
   width: 100%;
   height: 80px;
   padding-top: 0;
