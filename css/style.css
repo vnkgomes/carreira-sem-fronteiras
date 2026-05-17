@@ -88,7 +88,7 @@ header .container{
   display: flex;
   height: 80px;
   width: 80px;
-  background-image: url(images/logo-carreira-sem-fronteiras.svg);
+  background-image: url(../images/logo-carreira-sem-fronteiras.svg);
   background-repeat: no-repeat;
   background-size: 150px auto;
   background-position: center;
@@ -133,7 +133,7 @@ a:hover::after {
   height: 100vh;
   margin: -80px 0 0 0;
   text-align: center;
-  background-image: url(../carreira-sem-fronteiras/images/Banner-principal.png);
+  background-image: url(../images/Banner-principal.png);
   background-size: cover;
   background-position: center;
 
@@ -301,7 +301,7 @@ h1{
   align-items: center;
   width: 100%;
   height: auto;
-  background-image: url(images/andrea2.png);
+  background-image: url(../images/andrea2.png);
   background-size: 700px auto;
   background-repeat: no-repeat;
   background-position-x: 90%;
@@ -356,7 +356,7 @@ h1{
 }
 .transformacao .container{
   max-width: none;
-  background-image: url(images/logo-carreira-sem-fronteiras.svg);
+  background-image: url(../images/logo-carreira-sem-fronteiras.svg);
   background-repeat: no-repeat;
   background-size: 1500px auto;
   background-position: -190% 50%;
